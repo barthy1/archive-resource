@@ -1,6 +1,9 @@
 ---
 platform: linux
-image: docker:///concourse/static-golang
+image_resource:
+  type: docker-image
+  source:
+    repository: 140.211.168.166:5000/golang1.6
 
 inputs:
 - name: archive-resource
