@@ -14,4 +14,4 @@ cd $GOPATH/src/github.com/concourse/archive-resource
 
 make
 
-cp -a assets/ Dockerfile $BUILD_DIR
+cp -a assets/ Dockerfile* $BUILD_DIR
