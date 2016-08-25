@@ -1,6 +1,5 @@
 ---
 platform: linux
-image: docker:///concourse/static-golang
 
 inputs:
 - name: archive-resource

@@ -1,0 +1,9 @@
+FROM ppc64le/ubuntu:14.04
+
+RUN apt-get update \
+    && apt-get install -y curl wget
+
+RUN wget http://ftp.unicamp.br/pub/ppc64el/ubuntu/14_04/cloud-foundry/jq-1.5-ppc64le -O /usr/local/bin/jq \
+    && chmod +x /usr/local/bin/jq
+
+ADD assets/ /opt/resource/
